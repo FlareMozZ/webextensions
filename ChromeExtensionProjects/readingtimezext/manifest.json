@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Reading time",
+    "version": "1.0",
+    "description": "Calculates and adds resding time to chrome articles",
+    "icons": {
+        "16": "assets/size1.png",
+        "32": "assets/size2.png",
+        "48": "assets/size3.png",
+        "128": "assets/size4.png" 
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*"
+          ]
+        }
+      ]
+}
