@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "word of the day",
+    "version": "1.0",
+    "description": " gives word of the day",
+    "background":{
+        "page":"background.html",
+        "persistent": false
+    },
+    "chrome_url_overrides":{
+        "newtab":"newtab.html"
+    }
+}
